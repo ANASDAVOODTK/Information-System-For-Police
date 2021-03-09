@@ -1,4 +1,5 @@
-# OFFDEFF - WEB
+# Information-System-For-Police
+A Police Helping Application System
 
 This is the our URL to trainig photos for police database creation **[offdeff.hackp.cyberdome.org.in](http://offdeff.hackp.cyberdome.org.in:8090/)**
 
