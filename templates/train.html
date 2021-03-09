@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HacKP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='lodash.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='immutable.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='axios.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='jquery.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='app.js') }}"
+    ></script>
+  </head>
+
+  <body style="background-color:rgba(255,0,0,0.5);">
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 60px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 150px 300px;
+        height: 100%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+      }
+      #train-content .description {
+        padding-bottom: 30px;
+        font-size: larger;
+        font-weight: 700;
+      }
+
+      #train-content .form-item {
+        padding-bottom: 20px;
+        font-weight: bold;
+      }
+      #train-content button {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      input[type="file"] {
+        display: none;
+      }
+      .custom-file-upload {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+      }
+      input[type="text"],
+      select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .form-action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        border: 2px solid blue; 
+        }
+    </style>
+    <h1>UPLOAD THE PRISONERS DETAILS TO POLICE DATABASE</h1>
+    <div class="container">
+      <div id="train-content">
+        <form method="post" id="train">
+          <div class="message"></div>
+          <p class="description">
+            Upload the Prisoners details to police database for recognize later
+          </p>
+          <div class="form-item">
+            <label for="input-file" class="custom-file-upload"
+              ><i class="fa fa-cloud-upload"></i> UPLOAD PHOTO OF
+              PRISONER</label
+            >
+            <input type="file" name="file" id="input-file" accept="image/*" />
+          </div>
+          <div class="form-item">
+            <label>NAME AND DETAILS</label>
+            <input
+              id="name-field"
+              name="name"
+              value=""
+              type="text"
+              placeholder="Please enter full name,DOB,Case details"
+            />
+          </div>
+          <div class="form-action">
+            <button type="submit">UPLOAD THE DETAILS TO POLICE DATABASE</button>
+          </div>
+            <p class="description" style="color:red;font-size: 15px;text-align:center">
+              After click the upload button.Please wait until a successful
+              conformation
+            </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

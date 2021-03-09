@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>hackp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
+    <script type="text/javascript" src="/static/lodash.js"></script>
+    <script type="text/javascript" src="/static/immutable.js"></script>
+    <script type="text/javascript" src="/static/axios.js"></script>
+    <script type="text/javascript" src="/static/jquery.js"></script>
+    <script type="text/javascript" src="/static/app.js"></script>
+</head>
+<body style="background: pink url('/static/face.png') no-repeat fixed center;">
+
+
+<div class="container">
+    <h1 style="padding-top:50px; color: darkblue; font-size: 220%;">FIND UNKNOWN PERSON FROM POLICE DATABASE!</h1>
+    <br/>
+    <br/>
+
+
+    <div id="recognize-content">
+        <center><h2 style=" color: darkred; font-size: 190%">RECOGNIZE</h2></center>
+
+        <form method="post" id="recognize">
+            <div class="message">
+
+            </div>
+            <p  class="description"><center><i style="color: black; font-size:200%">Upload an image and I will tell to you who is is the picture.</i></center></p>
+            <br/>
+            <div class="form-item">
+                <center><label style=" font-size:190%; color: darkred;" for="input-file">IMAGE:</label></center>
+                <center><input  type="file"  name="file" id="recognize-input-file" accept="image/*"/></center>
+                <br/>
+                <br/>
+            </div>
+
+            <div class="form-action">
+                <center><button style="width: 25%; background-color: blue; color: white" type="submit">FIND THE PERSON DETAILS</button></center>
+                <center><p class="description" style="color:red">Please wait for the result after click the Find Button</p></center>
+            </div>
+        </form>
+    </div>
+
+
+
+</div>
+</body>
+</html>
