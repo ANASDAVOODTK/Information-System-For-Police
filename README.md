@@ -1,8 +1,6 @@
 # Information-System-For-Police
 A Police Helping Application System
 
-This is the our URL to trainig photos for police database creation **[offdeff.hackp.cyberdome.org.in](http://offdeff.hackp.cyberdome.org.in:8090/)**
-
 ## Pycharm IDE for Python Development(optional*)
 
 PyCharm is an integrated development environment (IDE) used in computer programming, specifically for the Python language. PyCharm is a cross-platform, with Windows, macOS and Linux versions. **[Download Pycharm](https://www.jetbrains.com/pycharm/download)** development tool.
