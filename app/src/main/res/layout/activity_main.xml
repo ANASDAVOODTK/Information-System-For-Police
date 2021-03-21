@@ -1,0 +1,68 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/pullfresh"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip"
+    android:paddingBottom="0dip"
+	tools:context="MainActivity"
+    android:background="@color/white">
+
+	<RelativeLayout
+		android:id="@+id/msw_welcome"
+		android:layout_width="match_parent"
+		android:layout_height="716dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="0dp"
+		android:layout_marginLeft="0dp"
+		android:layout_marginTop="3dp"
+		android:gravity="center_vertical|center_horizontal|center"
+		android:visibility="visible"
+		tools:ignore="RtlHardcoded">
+
+		<pl.droidsonroids.gif.GifImageView
+			android:layout_width="112dp"
+			android:layout_height="75dp"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginStart="156dp"
+			android:layout_marginTop="301dp"
+			android:layout_marginEnd="143dp"
+			android:layout_marginBottom="340dp"
+			android:src="@drawable/asas" />
+	</RelativeLayout>
+
+	<WebView
+        android:id="@+id/msw_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+	<WebView
+		android:id="@+id/print_view"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:visibility="gone" />
+
+	<ProgressBar
+		android:id="@+id/msw_progress"
+		style="@android:style/Widget.ProgressBar.Horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="5dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="0dp"
+		android:layout_marginTop="0dp"
+		android:progressDrawable="@drawable/progress_style"
+		android:visibility="visible" />
+</RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
